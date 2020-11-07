@@ -44,6 +44,7 @@ class Home extends Component {
 
   handleBookSave = id => {
     const book = this.state.books.find(book => book.id === id);
+    console.log(book);
 
     API.saveBook({
       googleId: book.id,

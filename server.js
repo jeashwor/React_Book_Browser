@@ -23,7 +23,9 @@ mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/reactGoogleBooks",
     {
       useCreateIndex: true,
-      useNewUrlParser: true
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false
     }
   );
 
